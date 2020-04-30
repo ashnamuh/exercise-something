@@ -5,9 +5,10 @@ import {
   Route,
   Link,
 } from 'react-router-dom'
-import GlobalStyled from 'styles/global'
 import { Provider } from 'react-redux'
 import store from 'services/store'
+import 'styles/global.css'
+import 'styles/reset.css'
 
 import IndexPage from 'pages/index'
 import AshPage from 'pages/ash'
@@ -16,7 +17,6 @@ import ManduPage from 'pages/mandu'
 export default function App() {
   return (
     <>
-      <GlobalStyled />
       <Provider store={store}>
         <Router>
           <div>
