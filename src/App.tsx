@@ -7,8 +7,7 @@ import {
 } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import store from 'services/store'
-import 'styles/global.css'
-import 'styles/reset.css'
+import 'styles/global.scss'
 
 import IndexPage from 'pages/index'
 import AshPage from 'pages/ash'
