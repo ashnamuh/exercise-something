@@ -11,7 +11,7 @@ import 'styles/global.scss'
 
 import IndexPage from 'pages/index'
 import AshPage from 'pages/ash'
-import ManduPage from 'pages/mandu'
+import HCenterPage from 'pages/horizontal-center'
 
 export default function App() {
   return (
@@ -27,14 +27,14 @@ export default function App() {
                 <Link to="/ash">Ash</Link>
               </li>
               <li>
-                <Link to="/mandu">Mandu</Link>
+                <Link to="/horizontal-center">HCenter</Link>
               </li>
             </ul>
 
             <Switch>
               <Route exact path="/" component={IndexPage} />
               <Route exact path="/ash" component={AshPage} />
-              <Route exact path="/mandu" component={ManduPage} />
+              <Route exact path="/horizontal-center" component={HCenterPage} />
             </Switch>
           </div>
         </Router>
