@@ -1,0 +1,13 @@
+.nav {
+  border: 1px solid #333;
+  display: inline-block;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: lightgoldenrodyellow;
+
+  li {
+    color: darkblue;
+    text-decoration: underline;
+  }
+}

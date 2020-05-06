@@ -8,6 +8,7 @@ import {
 import { Provider } from 'react-redux'
 import store from 'services/store'
 import 'styles/global.scss'
+import styles from './App.module.scss'
 
 import IndexPage from 'pages/index'
 import AshPage from 'pages/ash'
@@ -19,7 +20,7 @@ export default function App() {
     <>
       <Provider store={store}>
         <Router>
-          <div>
+          <nav className={styles.nav}>
             <ul>
               <li>
                 <Link to="/">Home</Link>
@@ -34,14 +35,14 @@ export default function App() {
                 <Link to="/ashnamuh-blog">Ashnamuh blog</Link>
               </li>
             </ul>
+          </nav>
 
-            <Switch>
-              <Route exact path="/" component={IndexPage} />
-              <Route exact path="/ash" component={AshPage} />
-              <Route exact path="/horizontal-center" component={HCenterPage} />
-              <Route exact path="/ashnamuh-blog" component={AshnamuhBlogPage} />
-            </Switch>
-          </div>
+          <Switch>
+            <Route exact path="/" component={IndexPage} />
+            <Route exact path="/ash" component={AshPage} />
+            <Route exact path="/horizontal-center" component={HCenterPage} />
+            <Route exact path="/ashnamuh-blog" component={AshnamuhBlogPage} />
+          </Switch>
         </Router>
       </Provider>
     </>
