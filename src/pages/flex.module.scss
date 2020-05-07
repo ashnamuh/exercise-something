@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  border: 2px solid olivedrab;
+  color: white;
+  text-align: center;
+  height: 100px;
+
+  .item1 {
+    width: 100px;
+    flex-shrink: 0;
+    background-color: orange;
+  }
+  .item2 {
+    background-color: orangered;
+  }
+  .item3 {
+    background-color: red;
+  }
+}

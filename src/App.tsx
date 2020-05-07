@@ -12,6 +12,7 @@ import styles from './App.module.scss'
 
 import IndexPage from 'pages/index'
 import AshPage from 'pages/ash'
+import FlexPage from 'pages/flex'
 import HCenterPage from 'pages/horizontal-center'
 import AshnamuhBlogPage from 'pages/ashnamuh-blog'
 
@@ -34,12 +35,16 @@ export default function App() {
               <li>
                 <Link to="/ashnamuh-blog">Ashnamuh blog</Link>
               </li>
+              <li>
+                <Link to="/flex">flex</Link>
+              </li>
             </ul>
           </nav>
 
           <Switch>
             <Route exact path="/" component={IndexPage} />
             <Route exact path="/ash" component={AshPage} />
+            <Route exact path="/flex" component={FlexPage} />
             <Route exact path="/horizontal-center" component={HCenterPage} />
             <Route exact path="/ashnamuh-blog" component={AshnamuhBlogPage} />
           </Switch>
