@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.aside {
+  border: 1px solid orangered;
+  width: 33%;
+  float: left;
+  padding: 1rem;
+  box-sizing: border-box;
+  h1 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5em;
+  }
+  nav {
+    font-size: 1rem;
+    li {
+      &:not(:first-child) {
+        margin-top: 0.5em;
+      }
+    }
+  }
+}
+
+.main {
+  border: 1px solid orange;
+  float: right;
+  width: 66%;
+}
+
+.article {
+  padding: 0.5rem;
+}

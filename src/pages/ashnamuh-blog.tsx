@@ -9,11 +9,11 @@ const Page: React.FC = () => {
           <h1>ashnamuh</h1>
           <nav>
             <ul>
-              <li>category1</li>
-              <li>category2</li>
-              <li>category3</li>
-              <li>category4</li>
-              <li>category5</li>
+              <li><a>category1</a></li>
+              <li><a>category2</a></li>
+              <li><a>category3</a></li>
+              <li><a>category4</a></li>
+              <li><a>category5</a></li>
             </ul>
           </nav>
         </aside>
