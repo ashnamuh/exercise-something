@@ -15,6 +15,7 @@ import AshPage from 'pages/ash'
 import FlexPage from 'pages/flex'
 import HCenterPage from 'pages/horizontal-center'
 import AshnamuhBlogPage from 'pages/ashnamuh-blog'
+import WithoutReduxPage from 'pages/without-redux'
 
 export default function App() {
   return (
@@ -38,6 +39,9 @@ export default function App() {
               <li>
                 <Link to="/flex">flex</Link>
               </li>
+              <li>
+                <Link to="/without-redux">without redux</Link>
+              </li>
             </ul>
           </nav>
 
@@ -47,6 +51,7 @@ export default function App() {
             <Route exact path="/flex" component={FlexPage} />
             <Route exact path="/horizontal-center" component={HCenterPage} />
             <Route exact path="/ashnamuh-blog" component={AshnamuhBlogPage} />
+            <Route exact path="/without-redux" component={WithoutReduxPage} />
           </Switch>
         </Router>
       </Provider>
