@@ -15,7 +15,7 @@ import AshPage from 'pages/ash'
 import FlexPage from 'pages/flex'
 import HCenterPage from 'pages/horizontal-center'
 import AshnamuhBlogPage from 'pages/ashnamuh-blog'
-import WithoutReduxPage from 'pages/without-redux'
+import WithoutReduxPage from 'pages/without-redux/container'
 
 export default function App() {
   return (
